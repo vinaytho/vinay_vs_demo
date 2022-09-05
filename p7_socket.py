@@ -11,4 +11,4 @@ while True:
     c, addr = s.accept()
     print("Connected with", addr)
 
-    c.send('Welcome to the party. You are now connected to ', addr,)
+    c.send(bytes('Welcome to the party. You are now connected','utf-8'))
